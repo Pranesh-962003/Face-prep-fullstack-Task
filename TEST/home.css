@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #212121;
+}
+.maincontainer{
+    height: 100%;
+    width: 100%;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+
+}
+nav .logo{
+    margin-left: 3%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav .logo span{
+    color: deeppink;
+}
+nav .right{
+margin-right: 3%;
+}
+nav .right a{
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 20px;
+    position: relative;
+}
+nav .right a::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    bottom: -5px;
+    left: 0;
+    background-color: deeppink;
+    transition: .5s;
+}
+nav .right a:hover::after{
+    width: 100%;
+}
+.container{
+    margin-left: 5%;
+    margin: 5%;
+    height: 200px;
+    width: 90%;
+    display: flex;
+    gap: 10px;
+}
+.box{
+    background-color: aqua;
+    flex-grow: 1;
+    height: 100%;
+    width: 0px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    transition: .4s;
+    overflow: hidden;
+}
+.box:hover{
+    flex-grow: 4;
+    opacity: 1;
+}
+h1{
+    opacity: 1;
+}
+
+.box:nth-child(1){
+    background-image: url(images/th.jpeg);
+    
+   
+}
+.box:nth-child(2){
+    background-image: url(images/th\ \(1\).jpeg);
+   
+}
+.box:nth-child(3){
+    background-image: url(images/th\ \(2\).jpeg);
+   
+}
+.box:nth-child(4){
+    background-image: url(images/th\ \(3\).jpeg);
+    
+}
+.box:nth-child(5){
+    background-image: url(images/th\ \(4\).jpeg);
+    
+}
+.box:nth-child(6){
+    background-image: url(images/th\ \(5\).jpeg);
+   
+}
+.realgame{
+    height: 200px;
+    width: 90%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 10px;
+    background-color: #413e3ef5;
+    margin-left: 5%;
+}
+.realgame::-webkit-scrollbar{
+    background-color: #212121;
+    height: 5px;
+}
+.realgame::-webkit-scrollbar-thumb{
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+    border-radius: 10px;
+}
+/* .container2{
+    margin-left: 5%;
+    margin: 5%;
+    height: 200px;
+    width: 90%;
+    display: flex;
+    gap: 10px;
+
+} */
+.game1{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 500px;
+    gap: 30px;
+    text-wrap: nowrap;
+    transition: .5s;
+    padding-left: 25px;
+}
+.game1 img{
+    height: 90%;
+    border-radius: 10px;
+    width: 300px;
+
+}
+.game1:hover{
+    transform: scale(1.03);
+}
+@media screen and (max-width:600px) {
+
+    .realgame{
+        height: 300px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        gap: 10px;
+
+        margin-left: 5%;
+        overflow-x: hidden;
+    }
+    .maincontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .game1{
+     height: 90%;
+     width: 90%;
+     
+     
+    }
+    .game1 img{
+        height: 100%;
+        border-radius: 10px;
+        width: 90px;
+    
+    }
+    .realgame::-webkit-scrollbar{
+        background-color: #212121;
+        width: 5px;
+    }
+    .realgame::-webkit-scrollbar-thumb{
+        background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+        border-radius: 10px;
+    }
+
+    
+}

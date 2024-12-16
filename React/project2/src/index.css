@@ -1,0 +1,191 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  
+}
+body{
+  
+  background-color: gray;
+}
+
+.Container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160vh;
+}
+.card{
+  width: 400px;
+  height: 95%;
+  border-radius: 10px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  
+  background-color: rgba(0, 0, 0, 0.911);
+  gap: 20px;
+}
+.card .imgcontainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+}
+.card .imgcontainer img{
+  border-radius: 10px;
+  margin-top: 5%;
+  width: 90%;
+  height: 300px;
+}
+.card .imgcontainer .btn{
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.card .imgcontainer .btn button{
+  height: 40px;
+  outline: none;
+  border: 1px solid black;
+  background: none;
+  width: 90px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.card .imgcontainer .btn button img{
+  width: 20px;
+  height: 20px;
+}
+.body{
+  display: flex;
+  flex-direction: column;
+  margin-left:3%;
+  gap: 15px;
+}
+.body .para1, .para2{
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+h3{
+  color:rgb(247, 240, 240);
+  text-decoration:underline;
+ }
+ p{
+  color:rgba(165, 165, 165, 0.801);
+ }
+.footer{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(27, 26, 26);
+  height: 100%;
+  border-radius:0px 0px 10px 10px;
+}
+.footer #whatsapp{
+  height: 30px;
+  width: 30px;
+}
+.footer #facebook{
+  height: 30px;
+  width: 30px;
+}
+.footer #linkdin{
+  height: 30px;
+  width: 30px;
+}
+.footer img{
+  height: 50px;
+  width: 50px;
+}
+@media screen and (max-width:505px){
+  body{
+    font-size: 15px;
+  }
+  .Container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .card{
+    width: 400px;
+    height: 95%;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+  }
+  .card::-webkit-scrollbar{
+    overflow-y: hidden;
+  }
+  .card .imgcontainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 10px;
+  }
+  .card .imgcontainer img{
+    border-radius: 10px;
+    margin-top: 5%;
+    width: 90%;
+    height: 250px;
+  }
+  .card .imgcontainer .btn{
+    width: 100%;
+  
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  .card .imgcontainer .btn button{
+    height: 40px;
+    outline: none;
+    border: 1px solid black;
+    background: none;
+    width: 90px;
+    border-radius: 10px;
+  }
+  .body{
+    display: flex;
+    flex-direction: column;
+    margin-left:3%;
+    gap: 10px;
+  }
+  .body .para1, .para2{
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .footer img{
+    height: 50px;
+    width: 50px;
+  }
+}
+
